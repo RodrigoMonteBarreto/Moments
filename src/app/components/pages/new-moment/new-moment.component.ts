@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Moment } from 'src/app/moment';
 import { MomentService } from 'src/app/services/moment.service';
-import { MessagesService } from 'src/app/services/messages.service';
+import { MessageService } from 'src/app/services/message.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ export class NewMomentComponent {
 btnText = 'Compartilhar!';
 
 constructor(private momentService: MomentService, 
-  private messageService: MessagesService,
+  private messageService: MessageService,
   private router: Router){
 
 }

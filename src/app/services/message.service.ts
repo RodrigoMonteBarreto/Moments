@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class MessagesService {
+export class MessageService {
 
   message: string = '';
 
@@ -12,10 +12,9 @@ export class MessagesService {
 
   add(message: string){
     this.message = message;
-
-    setTimeout(() => {
+    setTimeout(() =>{
       this.clear();
-    }, 4000);
+    },4000);
   }
 
   clear(){
